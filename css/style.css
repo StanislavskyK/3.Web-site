@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: Montserrat;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.75;
+}
+h4 {
+    font-family: Raleway;
+    font-size: 1.875em;
+    font-weight: 600;
+}
+h6 {
+    font-family: Raleway;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.photo {
+    background-image: url(../image/photo-header.png);
+    width: 1920px;
+    height: 1024px;
+    position: absolute;
+}
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.header-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.logos {
+    width: 64px;
+    height: 56px;
+    background-image: url(../image/header-icon/logos.svg);
+}
+.Logo-text {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 2.125em;
+    text-align: right;
+    margin-top: 10px;
+}
+.Menu {
+    width: 52%;
+    height: 100%;
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__item {
+    width: 12.5%;
+    display: flex;
+}
+.menu__link {
+    font-family: Montserrat;
+    color:  #ffffff;
+    font-size: 0.875em;
+    font-weight: 300;
+    text-align: left;
+    text-decoration: none;
+}
+.menu__link:hover {
+    color:  #c7b29a;
+}
+.Cart {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 24px;
+    background-image: url(../image/header-icon/icon-cart.svg);
+}
+.Cart:hover {
+    margin-bottom: 5px;
+}
+.Search {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/header-icon/icon-search.svg);
+}
+.Search:hover {
+    margin-bottom: 5px;
+}
+.slider {
+    width: 1920px;
+    height: 1024px;
+    position: relative;
+}
+.Slogan-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.Slogan {
+    width: 30.7%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.Slogan h2 {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 2.25em;
+    font-weight: 500;
+    text-align: center;
+}
+.Slogan h1 {
+    font-family: Raleway;
+    color:  #ffffff;
+    font-size: 3.25em;
+    font-weight: 700;
+    text-align: center;
+}
+.Slogan p {
+    color:  #ffffff;
+}
+
+/* --------------------------  */
+
+
+.Arrows {
+    width: 84.4%;
+    top: 48%;
+    left: 7.5%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.prev {
+    transition: 0.6s ease;
+    width: 40px;
+    height: 73px;
+    cursor: pointer;
+    display: block;
+}
+
+.next {
+    transition: 0.6s ease;
+    width: 40px;
+    height: 73px;
+    cursor: pointer;
+    display: block;
+}
+.prev:hover, .next:hover {
+  background-color: #33312c;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-container {
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 50%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+
+/*---------------------------------*/
+
+.content {
+    width: 1920px;
+}
+
+.Services {
+    width: 60.7%;
+    display: flex;
+    height: 213px;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 25%;
+}
+.Services-block {
+    text-align: center;
+}
+.Services-block h5 {
+    font-family: Raleway;
+    color:  #555555;
+    font-size: 1.375em;
+    font-weight: 600;
+    text-align: center;
+}
+.Services-block p {
+    font-family: Montserrat;
+    color:  #8c8c8c;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 1.714;
+    text-align: center;
+    margin-top: 15px;
+}
+.Services-block {
+    fill:  #555555;
+    margin-top: 35px;
+}
+.Services-block a {
+    text-decoration: none;
+    cursor: default;
+}
+.Services-line {
+    background-color:  #f1eee9;
+    width: 70px;
+    height: 3px;
+    margin-left: 37.5%;
+    margin-top: 5%;
+}
+.Services-block h5:hover {
+    color: #c7b299;
+}
+.Services-block a:hover {
+    fill: #c7b299;
+}
+.Services-line:hover {
+    color: #c7b299;
+}
+.Realization-ideas {
+    width: 1920px;
+    height: 700px;
+}
+.Realization-ideas-container {
+    position: absolute;
+    width: 1920px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+
+}
+.Realization-ideas-text {
+    width: 39.4%;
+    height: 1.4%;
+    position: absolute;
+    text-align: center;
+    margin-top: 2.5%;
+}
+.Realization-ideas-text h4 {
+    color:  #555555;
+}
+.Realization-ideas-text p {
+    color:  #8c8c8c;
+    margin-top: 2.5%;
+}
+.Text-boxes {
+    width: 1920px;
+    height: 150px;
+    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+.Text-boxes-text {
+    width: 27.6%;
+}
+.Text-boxes-text h5 {
+    font-family: Raleway;
+    color:  #c7b299;
+    font-size: 1.75em;
+    font-weight: 400;
+    text-align: left;
+}
+.Text-boxes-text p {
+    font-family: Montserrat;
+    color:  #615855;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-align: left;
+}
