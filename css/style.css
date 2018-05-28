@@ -402,11 +402,12 @@ h6 {
 
 .project-container-project {
     margin-left: 15px;
+    transition: .3s;
 }
 .project-container-project:hover {
     filter: grayscale(1);
+    transform: translate(-3px,-3px);
 }
-
 .project-container-project-text {
     margin-top: 10px;
     margin-bottom: 10px;
