@@ -1,0 +1,438 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+header
+	background-color: transparent
+	z-index: 4
+	position: relative
+span
+	color: $accent
+h1
+	font-family: Merri-example
+	color:  #ffffff
+	font-size: 300px
+	font-weight: 800
+	text-align: left
+h6
+	font-family: roboto-example
+	color:  #ffffff
+	font-size: 14px
+	font-weight: 500
+	line-height: 24px
+	text-align: left
+h2
+	font-family: roboto-condensed
+	color:  #ffffff
+	font-size: 35px
+	font-weight: 300
+	line-height: 50px
+	text-align: left
+h3
+	font-family: Merri-example
+	color:  #ffffff
+	font-size: 35px
+	font-weight: 800
+	line-height: 42px
+	text-align: left
+p
+	font-family: roboto-example
+	color:  #ffffff
+	font-size: 14px
+	font-weight: 400
+	line-height: 24px
+	text-align: left
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.Background
+	background-color:  #ffffff
+
+.body-container
+
+.body-container__text-one
+	font-family: roboto-condensed
+	color:  #b6b6b6
+	font-size: 12px
+	font-weight: 400
+	line-height: 55px
+	text-align: left
+	text-transform: uppercase
+	position: absolute
+	margin-left: 45px
+	margin-top: -45px
+	z-index: 4
+.body-container__text-two
+	font-family: roboto-condensed
+	color:  #fff
+	font-size: 11px
+	font-weight: 300
+	line-height: 35px
+	letter-spacing: 3px
+	position: absolute
+	text-transform: uppercase
+	right: -60px
+	top: 245px
+	transform: rotate(-90deg)
+	white-space: pre
+	z-index: 4
+.body-container__text-three
+	font-family: roboto-condensed
+	color:  #fff
+	font-size: 11px
+	font-weight: 300
+	line-height: 35px
+	letter-spacing: 3px
+	text-transform: uppercase
+	position: absolute
+	margin-left: 55px
+	top: 550px
+	transform: rotate(-90deg)
+	white-space: pre
+	z-index: 4
+
+
+
+
+//  Masthead
+
+
+.Masthead
+	width: 100%
+	min-height: 1100px
+	height: 100vh
+	background-size: cover
+	background-position: center
+	margin-left: 40px
+	margin-top: 40px
+	z-index: 3
+	position: relative
+
+.header-menu
+	padding-top: 180px
+	position: absolute
+	left: 10px
+	display: flex
+	align-items: center
+	div
+		a
+			font-family: roboto-example
+			color:  #ffffff
+			font-size: 14px
+			font-weight: 300
+			line-height: 55px
+			text-decoration: none
+			text-transform: uppercase
+			padding-left: 20px
+		transition: .3s ease
+		&:hover
+			transform: translateY(-4px)
+	img
+		transition: .3s ease
+		&:hover
+			transform: translateY(-4px)
+
+.header-profile
+	position: absolute
+	right: 0
+	padding-right: 20px
+	img
+		width: 18px
+		margin-right: 20px
+		margin-top: 40px
+		transition: .3s ease
+		&:hover
+			transform: translateY(-4px)
+	.header-profile__photo
+		width: 45px
+.horizontal-line
+	width: 100%
+	height: 1px
+	background-color: #fff
+	margin-top: 245px
+	position: absolute
+	opacity: .2
+.vertical-line
+	width: 1px
+	min-height: 981px
+	height: 100vh
+	background-color: #fff
+	left: 35px
+	position: absolute
+	opacity: .2
+
+.header-composition
+	img
+		margin-top: 300px
+
+
+
+// Articles
+
+
+
+.Articles
+	background-image: url(../img/Rectangle11.png)
+	width: 100%
+	height: 100vh
+	min-height: 900px
+	background-size: cover
+	background-position: bottom
+	margin-left: 40px
+	margin-top: -200px
+	position: relative
+	z-index: 2
+	padding-left: 30px
+	padding-right: 30px
+
+	h3
+		padding-top: 270px
+		padding-bottom: 70px
+	p
+		padding-left: 10px
+		padding-right: 10px
+		text-align: center
+.Article
+	transition: .3s ease
+	&:hover
+		transform: translateX(2px)
+
+.lightzoom
+	img
+		width: 300px
+		height: 250px
+
+
+
+// Blog
+
+
+
+
+.Blog
+	background-image: url(../img/Blog.png)
+	min-height: 930px
+	height: 100vh
+	width: 100%
+	margin-left: 40px
+	margin-top: -150px
+	background-size: cover
+	background-position: bottom
+	position: relative
+	z-index: 1
+.Blog-composition
+	margin-top: 280px
+.blog-title__text
+	font-size: 18px
+
+.blog-title-container
+	margin-right: 30px
+	padding-bottom: 40px
+
+
+
+//  news-articles
+
+
+
+.news-articles
+	background-color:  #f2f2f2
+	min-height: 600px
+	height: 100vh
+	width: 100%
+	margin-left: 40px
+	margin-top: -150px
+.news-article
+	background-color: #fff
+	h4
+		font-family: Merri-example
+		color:  #000000
+		font-size: 23px
+		font-weight: 800
+		line-height: 30px
+		text-align: left
+		padding: 15px
+	p
+		color:  #697b83
+		padding-left: 18px
+		padding-right: 18px
+	img
+		width: 300px
+		height: 200px
+.news-carousel
+	margin-top: 190px
+.news-article-tags
+	display: flex
+	align-items: center
+	padding-left: 18px
+	padding-right: 18px
+	padding-bottom: 10px
+	img
+		width: 11px
+		height: 11px
+	span
+		padding-left: 7px
+.news-arrow
+	position: absolute
+	width: 57px
+	height: 57px
+	background-color: $accent
+	right: 0
+	bottom: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: .3s ease
+	&:hover
+		transform: translateY(-3px)
+	img
+		height: 14px
+
+
+
+// pre-footer
+
+
+.pre-footer
+	background-color: #fff
+	margin-bottom: 50px
+	position: relative
+	z-index: 5
+	p
+		margin-top: 1px
+
+
+// Footer
+
+
+footer
+	background-image: url(../img/ImageBaseTwo.png)
+	min-height: 1100px
+	height: 100vh
+	width: 100%
+	background-size: cover
+	background-position: center
+	margin-left: 40px
+	margin-top: 40px
+	z-index: 5
+	position: relative
+.footer
+	width: 100%
+	min-height: 1200px
+	background-color:  #11161d
+	position: relative
+	z-index: 1
+.horizontal-line-footer
+	width: 100%
+	height: 1px
+	background-color: #fff
+	margin-top: 245px
+	position: absolute
+	opacity: .2
+.vertical-line-footer
+	width: 1px
+	min-height: 1031px
+	height: 100vh
+	background-color: #fff
+	left: 35px
+	position: absolute
+	opacity: .2
+.pre-footer__text-one
+	font-family: roboto-condensed
+	color:  #b6b6b6
+	font-size: 12px
+	font-weight: 400
+	line-height: 55px
+	text-align: left
+	text-transform: uppercase
+	position: absolute
+	margin-left: 45px
+	margin-top: -45px
+	z-index: 4
+.pre-footer__text-two
+	font-family: roboto-condensed
+	color:  #fff
+	font-size: 11px
+	font-weight: 300
+	line-height: 35px
+	letter-spacing: 3px
+	position: absolute
+	text-transform: uppercase
+	right: -60px
+	top: 289px
+	transform: rotate(-90deg)
+	white-space: pre
+	z-index: 4
+.pre-footer__text-three
+	font-family: roboto-condensed
+	color:  #fff
+	font-size: 11px
+	font-weight: 300
+	line-height: 35px
+	letter-spacing: 3px
+	text-transform: uppercase
+	position: absolute
+	margin-left: 55px
+	top: 620px
+	transform: rotate(-90deg)
+	white-space: pre
+	z-index: 4
+.footer-social-container
+.footer-social-container-1
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-left: 40px
+	margin-right: 60px
+.footer-social
+	display: flex
+	justify-content: center
+	align-items: center
+	div
+		border-radius: 50%
+		background-color: $accent
+		width: 40px
+		height: 40px
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 7px
+		transition: .3s ease
+		&:hover
+			transform: translateY(-3px)
+	.footer-author
+		margin-right: 150px
+@import "media" // Always at the end
